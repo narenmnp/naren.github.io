@@ -1,0 +1,177 @@
+
+:root {
+    --name-font: 'Quicksand', sans-serif;
+    --thirukural-line-height: 1.4em;
+    --font-color: aliceblue;
+    --menu-item-color: #51d9db;
+}
+
+body {
+    background-color: rgb(44, 44, 47);
+    position: fixed;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.header {
+    color: var(--font-color);
+    width: 100vw;
+    top:0;
+    /* position: absolute; */
+    line-height: 4em;
+}
+
+.menu-icon {
+    font-size: 1.5em;
+}
+
+.nav {
+    list-style-type:none; 
+    text-align: center;
+    z-index: 999;
+    width: 100vw;
+    line-height: 3em;
+}
+
+.nav-item {
+    font-size: 1.5em;
+    color: var(--menu-item-color);
+    cursor: pointer;
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+    padding: 1em;
+    text-align: center;
+    text-decoration: none;
+}
+
+.nav-item:hover {
+    /* color: #e87751; */
+    border-bottom: 0.01em solid #999897;
+    border-radius: 0.2em;
+}
+
+.profile {
+    text-align: center;
+    width: 100%;
+    margin-top: 3em;
+}
+
+.figure {
+    border-radius: 400px;
+    height : 20em;
+}
+
+.name-label {
+    font-family: var(--name-font);
+    font-size: 25px;
+    color: var(--font-color);
+    font-size: 2.8em;
+}
+
+.thirukural {
+    font-size: 45px;
+    color: var(--font-color);
+    text-align: center;
+    width: 100%;
+}
+
+.thirukural-tamil {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: var(--thirukural-line-height);
+    text-align: center;
+    margin: 0 auto;
+}
+
+.thirukural-tamil-meaning {
+    font-size: 0.4em;
+}
+
+.thirukural-english {
+    font-size: 28px;
+    line-height: var(--thirukural-line-height);
+    text-align: center;
+    margin: 0 auto;
+}
+
+.thirukural-english-meaning {
+    font-size: 0.4em;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+   .figure {
+        height : 12em;
+    }
+    .thirukural-tamil {
+        font-size: 14px;
+    }
+    .name-label {
+        font-size: 20px;
+    }
+    .thirukural-english {
+        font-size: 18px;
+    }
+    .thirukural-english-meaning {
+        font-size: 0.35em;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: contents;
+    }
+
+    .mobile-nav > .nav-item {
+        font-size: 1.5em;
+        color: var(--menu-item-color);
+        cursor: pointer;
+        margin-left: 1em;
+        margin-right: 1em;
+        padding: 1em;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .profile {
+        text-align: center;
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .figure {
+        height : 15em;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .figure {
+        height : 18em;
+    }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .nav-item {
+        color: aquamarine;
+    }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .nav-item {
+        color: orange;
+    }
+}
